@@ -1,5 +1,5 @@
 class Group < ApplicationRecord
-    belongs_to :author, class_name: 'User'
+  belongs_to :author, class_name: 'User'
   has_many :entities
 
   validates :name, presence: true
@@ -9,7 +9,7 @@ class Group < ApplicationRecord
   end
 
   def total_spent(id)
-   entities = Entity.where(group_id: id)
+    entities = Entity.where(group_id: id)
     total = 0
     entities.each do |entity|
       total += entity.amount

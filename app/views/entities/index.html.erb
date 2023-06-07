@@ -1,0 +1,35 @@
+<div class="nav-header ">
+ <div>
+      <%= link_to  user_groups_path do %>
+        <%= image_tag "icons8-back-72.png", style: 'height:10px; width:auto;' %>
+      <% end  %>
+    </div>
+  <h4 class="text-gray-4 ">Entities</h4> 
+  <div> </div>
+</div>
+
+<div class= "expenditures-total">
+  <div class="icon-container"> 
+    <%= image_tag "#{@group_id.icon}.png", style: 'height:40px; width:auto;' %> 
+  </div>
+<% if @entities.count > 0 %>
+  <div class=" flex-column">
+    <p> <strong>Category:</strong> <%= @group_id.name %> </p>
+    <p> <strong>Total spent:</strong> $<%= @entities.first.total_expenditures(@group_id) %></p>
+  </div>
+  <%end %>
+</div>
+
+<div id="entities">
+  <% @entities.each do |entity| %>
+    <%= render entity %>
+    <p>
+     
+    </p>
+  <% end %>
+</div>
+<div class='add-ne-category-btn-container-main'>
+  <div class= 'add-ne-category-btn-container'>
+    <%= link_to "Add a new entity", new_user_group_entity_path(author_id: current_user.id, group_id: @group_id), class: 'add-ne-category-btn text-gray-4' %>
+  </div> 
+</div>

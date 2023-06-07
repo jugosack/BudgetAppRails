@@ -2,6 +2,7 @@
  <div class= 'category-container'>
     <div><strong><%= @group_id.name %>:</strong> </div>
     <div> <%= entity.name %> </div>
+     <p>Date: &nbsp; <%= ((entity.created_at).to_s)[0, 10] %> </p>
     <div>$ <%= entity.amount %></div>
   </div>
 </div>

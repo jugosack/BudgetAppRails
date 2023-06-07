@@ -15,7 +15,7 @@
 <% if @entities.count > 0 %>
   <div class=" flex-column">
     <p> <strong>Category:</strong> <%= @group_id.name %> </p>
-    <p> <strong>Total spent:</strong> $<%= @entities.first.total_expenditures(@group_id) %></p>
+    <p> <strong>Total spent:</strong> $<%= @entities.first.total_entities(@group_id) %></p>
   </div>
   <%end %>
 </div>

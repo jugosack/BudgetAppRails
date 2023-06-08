@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@media (max-width: 767px) {
+    /* CSS for mobile devices */
+   
+    /* Center the title */
+    .splash-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 30vh; /* Adjust the height as needed */
+    }
+    
+    .splash-title h1 {
+        font-family: 'Pacifico', cursive;
+      }
+  
+    /* Center the buttons */
+    .splash-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30vh; /* Adjust the height as needed */
+    }
+  
+    /* Adjust the button spacing */
+    .splash-btn a {
+      margin: 0 10px; /* Adjust the margin as needed */
+    }
+  }
+  

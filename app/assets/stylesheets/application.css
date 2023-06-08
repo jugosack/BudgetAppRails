@@ -18,6 +18,7 @@
  *= require new_sessions
  *= require registration
  *= require category
+ *= new_category
  */
 
  

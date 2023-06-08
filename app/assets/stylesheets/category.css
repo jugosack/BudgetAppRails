@@ -1,0 +1,160 @@
+/* Default styles */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(0, 140, 255, 0.889);
+  }
+  
+  header h4 {
+    margin: 0;
+    flex-grow: 1;
+    color:white;
+    text-align: center;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  div .welcome_user {
+    margin-right: 10px;
+    padding-left: 10px;
+
+  }
+  
+  div .btn_logout {
+    margin-top:20px;
+    width: 60px;
+    height:30px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 0 5px 0 5px;
+    margin-left: 100px;
+  }
+  
+  div .btn_logout:hover {
+    background-color: rgba(0, 140, 255, 0.889);
+  }
+  
+  
+  main {
+    margin-top:50px;
+    padding: 10px;
+  }
+  
+  .category-link {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #categories {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .category-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .icon-container {
+    margin-right: 10px;
+  }
+  
+  .category-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .category-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    width:200px;
+  }
+  
+  .total-spent {
+    font-size: 14px;
+    color: #999;
+    padding-left:20%;
+   
+  }
+  
+  /* Styles for the outer container */
+.btn-add-cat {
+    display: inline-block;
+    justify-content: center;
+  align-items: center;
+  margin: 0px;
+  width: 100%;
+  padding-left: 0px 10px 0px 10px;
+  background-color: green;
+ 
+  }
+  
+  /* Styles for the inner container */
+  .btn-add-cat-container {
+    background-color: green;
+    padding: 10px;
+   
+    border: 3px solid white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Styles for the link button */
+  .link-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: green;
+    color: #fff;
+    padding: 8px 70px;
+    border-radius: 4px;
+    border: 1px solid;
+  }
+  
+  .link-btn:hover {
+    background-color: #23527c;
+  }
+  
+  .link-btn:active {
+    background-color: #1d4569;
+  }
+  
+  
+ 
+  
+  /* Mobile styles */
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 10px 5px;
+    }
+  
+    .welcome_user {
+      margin-top: 20px;
+    }
+  
+    main {
+      padding: 5px;
+    }
+  
+    #categories {
+      flex-direction: column;
+    }
+  
+    .category-container {
+      width: 100%;
+    }
+  }
+  

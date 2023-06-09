@@ -84,4 +84,4 @@ production:
   # database: BudgetAppRails_production
   # username: BudgetAppRails
   # password: <%= ENV["BUDGETAPPRAILS_DATABASE_PASSWORD"] %>
-   url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['DATABASE_URL'] %>

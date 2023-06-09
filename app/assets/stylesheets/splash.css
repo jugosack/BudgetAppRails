@@ -21,12 +21,55 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 30vh; /* Adjust the height as needed */
+      height: 30vh;
+      flex-direction: column;
+      padding: 10px 20px;
     }
   
     /* Adjust the button spacing */
     .splash-btn a {
+      /* text-decoration: none;
       margin: 0 10px; /* Adjust the margin as needed */
+      /* color:white; */ 
     }
+    .btn-login{
+      width: 100%;
+      justify-content: center;
+      padding: 10px;
+      color:white;
+      background-color: rgba(0, 140, 255, 0.889);
+    }
+
+    .btn-signup{
+      margin-top:3px;
+      width: 100%;
+      justify-content: center;
+      padding: 10px;
+      /* border: 1px solid lightgray; */
+      
+    }
+
+    .btn-login a{
+      text-decoration: none;
+      margin: 0 10px; /* Adjust the margin as needed */
+      color:white;
+    }
+
+    .btn-signup a{
+      text-decoration: none;
+      margin: 0 10px; /* Adjust the margin as needed */
+      color:gray;;
+    }
+   
+    .link-login a{
+      /* text-decoration: none;
+      margin: 0 10px; /* Adjust the margin as needed */
+      color:white; */
+    }
+
+    .btn-signup a:hover{
+      background-color: rgba(0, 140, 255, 0.889);
+    }
+   
   }
   

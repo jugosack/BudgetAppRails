@@ -3,13 +3,10 @@ require 'rails_helper'
 RSpec.describe 'Expenditure', type: :feature do
   describe 'Expenditure' do
     before(:each) do
-
-       
-
-    @user = User.create! password: '123456', email: 'jugoslav@email.com', name: 'Jugoslav'
-    @group =  Group.create! name: 'group', author_id: @user.id, icon: 'Education'
-    Entity.create! name: 'Entity', author_id: @user.id, amount: 55, group_id: @group.id
-    Entity.create! name: 'new Entity', author_id: @user.id, amount: 55, group_id: @group.id
+      @user = User.create! password: '123456', email: 'jugoslav@email.com', name: 'Jugoslav'
+      @group = Group.create! name: 'group', author_id: @user.id, icon: 'Education'
+      Entity.create! name: 'Entity', author_id: @user.id, amount: 55, group_id: @group.id
+      Entity.create! name: 'new Entity', author_id: @user.id, amount: 55, group_id: @group.id
 
       visit '/users/sign_in'
       fill_in 'Email', with: 'jugoslav@email.com'

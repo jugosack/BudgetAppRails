@@ -26,8 +26,8 @@ RSpec.describe 'Categories', type: :feature do
     end
 
     scenario 'A NEW CATEGORY page' do
-        click_link 'ADD A NEW CATEGORY'
-        expect(page).to have_content('Name')
-      end
+      click_link 'ADD A NEW CATEGORY'
+      expect(page).to have_content('Name')
+    end
   end
 end

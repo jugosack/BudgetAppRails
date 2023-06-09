@@ -3,27 +3,30 @@
   <div class="nav-header">
     <div>
       <%= link_to  :back do %>
-        <%= image_tag "icons8-back-72.png", style: 'height:10px; width:auto;' %>
+        <%= image_tag "icons8-back-72.png", style: 'height:20px; width:20px;' %>
       <% end  %>
     </div>
-    <h4 class="text-gray-4"> NEW CATTEGORY</h4>
+    <h4 class="text-gray-4">NEW CATTEGORY</h4>
     <div class="actions">
-      <%=  f.submit ('NEXT'), class:" bg-light nav-right-action text-gray-4" %>
+      <%=  f.submit ('NEXT'), class:"btn-next-newcat" %>
     </div>
   </div>
 
-    <div class= "form-group-custom" >
-      <%= f.text_field :name,   class:"form-control-custom", placeholder: "Enter category name", autofocus: true %>
+  <div class= "form-group-custom" >
+      <%= f.label :icon, "Select a category :", class: "icon-label-cat" %>
+      <%= f.select :icon, ["Education", "Entertainment", "Healthcare", "Shopping", "Utilities", "Other" ], class:"form-icon-custom" %>
     </div>
 
     <div class= "form-group-custom" >
-      <%= f.label :icon, "Select label for an icon:", class: "label text-gray-2" %>
-      <%= f.select  :icon, ["Education", "Entertainment", "Healthcare", "Shopping", "Utilities", "Other" ], class:"form-control-custom" %>
+     <%= f.label :name, "Name", class: "name-lab-cat" %>
+      <%= f.text_field :name,   class:"form-control-custom", placeholder: "Enter category name", autofocus: true %>
     </div>
+
     
-  <div class='add-ne-category-btn-container-main'>
-    <div class= 'add-ne-category-btn-container'>
-        <%=  f.submit ('SUBMIT'), class:" add-ne-category-btn text-gray-4" %>
+    
+  <div class='submit-new-category-cotainer'>
+    <div class= 'submit-new-category-btn'>
+        <%=  f.submit ('Add Category'), class:" btn-submit-new-cat" %>
       </div> 
     </div> 
   </div> 

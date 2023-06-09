@@ -3,11 +3,11 @@
     <header>
       <div>
       <%= link_to  :root do %>
-        <%= image_tag "icons8-back-72.png", style: 'height:10px; width:auto;' %>
+        <%= image_tag "icons8-back-72.png", style: 'height:20px; width:20; padding-left: 10px' %>
       <% end  %>
     </div>
       <h1>Login</h1>
-      <%= f.submit "Log in", class: 'btn--ghost' %>
+      <%= f.submit "Log in", class: 'btnlogin' %>
     </header>
     <main>
       <%= render "devise/shared/error_messages", resource: resource %>

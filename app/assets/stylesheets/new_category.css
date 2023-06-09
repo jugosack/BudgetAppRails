@@ -1,0 +1,84 @@
+/* CSS for mobile devices */
+
+@media (max-width: 767px) {
+  .nav-header {
+    background-color: rgba(0, 140, 255, 0.889);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .nav-header h4 {
+    margin: 0;
+    color: white;
+  }
+
+  .nav-header img {
+    height: 10px;
+    width: auto;
+  }
+
+  .btn-next-newcat {
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-group-custom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10px;
+  }
+
+  .name-lab-cat,
+  .icon-label-cat {
+    font-weight: bold;
+    width: 80%;
+  }
+
+  .form-group-custom select {
+    width: 80%;
+  }
+
+  .form-control-custom {
+    width: 80%;
+  }
+
+  .submit-new-category-cotainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .submit-new-category-btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .btn-submit-new-cat {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+
+  .btn-submit-new-cat:hover {
+    background-color: darkgreen;
+  }
+}

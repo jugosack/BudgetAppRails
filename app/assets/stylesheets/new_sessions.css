@@ -1,49 +1,48 @@
 /* Mobile Styles */
 @media (max-width: 767px) {
-    section.devise header {
-      background-color: rgba(0, 140, 255, 0.889);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    section.devise header h1 {
-      color: white;
-    }
-    .btnlogin{
-      background-color: transparent;
-      color: white;
-      border: none;
-
-    }
-  
-    section.devise header div a img {
-      height: 20px;
-      width: auto;
-    }
-  
-    section.devise main {
-      padding: 20px;
-    }
-  
-    section.devise main .field {
-      margin-bottom: 10px;
-    }
-  
-    section.devise main .field input[type="email"],
-    section.devise main .field input[type="password"] {
-      background-color: #f2f2f2;
-      border: none;
-      padding: 10px;
-      width: 100%;
-    }
-  
-    section.devise main .links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-      }
+  section.devise header {
+    background-color: rgba(0, 140, 255, 0.889);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  
+
+  section.devise header h1 {
+    color: white;
+  }
+
+  .btnlogin {
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+
+  section.devise header div a img {
+    height: 20px;
+    width: auto;
+  }
+
+  section.devise main {
+    padding: 20px;
+  }
+
+  section.devise main .field {
+    margin-bottom: 10px;
+  }
+
+  section.devise main .field input[type="email"],
+  section.devise main .field input[type="password"] {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    width: 100%;
+  }
+
+  section.devise main .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+}

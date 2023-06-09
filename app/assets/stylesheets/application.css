@@ -13,7 +13,8 @@
  *= require_tree .
  *= require_self
  */
- /*
+
+/*
  *= require splash
  *= require new_sessions
  *= require registration
@@ -21,7 +22,3 @@
  *= new_category
  *= entity
  */
-
- 
-
- 

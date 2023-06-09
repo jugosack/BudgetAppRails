@@ -25,13 +25,7 @@
       flex-direction: column;
       padding: 10px 20px;
     }
-  
-    /* Adjust the button spacing */
-    .splash-btn a {
-      /* text-decoration: none;
-      margin: 0 10px; /* Adjust the margin as needed */
-      /* color:white; */ 
-    }
+    
     .btn-login{
       width: 100%;
       justify-content: center;
@@ -45,7 +39,7 @@
       width: 100%;
       justify-content: center;
       padding: 10px;
-      /* border: 1px solid lightgray; */
+ 
       
     }
 
@@ -60,13 +54,6 @@
       margin: 0 10px; /* Adjust the margin as needed */
       color:gray;;
     }
-   
-    .link-login a{
-      /* text-decoration: none;
-      margin: 0 10px; /* Adjust the margin as needed */
-      color:white; */
-    }
-
     .btn-signup a:hover{
       background-color: rgba(0, 140, 255, 0.889);
     }

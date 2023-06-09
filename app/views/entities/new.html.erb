@@ -27,12 +27,12 @@
 
  <div class= "form-group-custom" >
       <%= form.label :icon, "Entity name:", class: "icon-label-cat" %>
-      <%= form.text_field :name,   class:"form-control-custom", placeholder: "Enter entity name", autofocus: true %>
+      <%= form.text_field :name, required: true, class:"form-control-custom", placeholder: "Enter entity name", autofocus: true %>
     </div>
 
  <div class= "form-group-custom" >
  <%= form.label :icon, "Amount:", class: "icon-label-cat" %>
-      <%= form.number_field :amount,   class:"form-control-custom", placeholder: "Enter entity amount", autofocus: true %>
+      <%= form.number_field :amount,  required: true, class:"form-control-custom", placeholder: "Enter entity amount", autofocus: true %>
   </div>
 
   

@@ -28,7 +28,7 @@
 
 ## video demo 🎥
 
-[Video demo here](https://www.loom.com/share/edb4f04d81e64e20b2953e79e519982d)
+[Video demo here](https://www.loom.com/share/1b2427fb867c4e1c8d2419d57991c1f4)
 
 ## Render Deploy 🚀
 

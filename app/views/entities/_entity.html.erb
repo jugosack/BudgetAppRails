@@ -1,0 +1,14 @@
+<div id="<%= dom_id entity %>">
+ <div class= 'category-container'>
+
+    <%if false%>
+      <div><strong><%= @group_id.name %>:</strong> </div>
+    <%end%>
+  
+   <div class='entity-cred'>
+      <div class='entity-name'> <strong><%= entity.name %></strong> </div>
+      <p>Date: &nbsp; <%= ((entity.created_at).to_s)[0, 10] %> </p>
+    </div>
+    <div class='entity-amount'><strong>$ <%= entity.amount %></strong></div>
+  </div>
+</div>

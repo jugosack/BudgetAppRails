@@ -1,0 +1,46 @@
+/* Default styles for larger screens */
+.field_name,
+.field_email,
+.field_password {
+  display: block;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Add a bottom border */
+}
+
+.btnnext {
+  display: block;
+  margin-top: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  .field_name,
+  .field_email,
+  .field_password {
+    display: inline-block;
+    width: calc(100% - 0px); /* Adjust width as needed */
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .field_name input,
+  .field_email input,
+  .field_password input {
+    border: none;
+  }
+
+  .btnnext {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .devise header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

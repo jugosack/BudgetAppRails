@@ -1,0 +1,43 @@
+<header>
+   <%= image_tag "menu.png", style: 'height:20px; width:20; padding-left: 10px' %>
+   <h4 class="text-gray-4 ">CATEGORIES</h4>
+    <%= image_tag "search.png", style: 'height:20px; width:20; padding-left: 10px' %>
+ </header>
+
+ <div>
+   <div class='welcome_user'>Welcome user: <%= current_user.name %></div>
+  <%= link_to 'Logout', destroy_user_session_path, method: :delete, class:  'btn_logout' %>
+ </div>
+</div>
+
+<main>
+  <div id="categories">
+    <% if @groups %>
+      <% @groups.each do |group| %>
+        <a href="/users/<%= group.author_id %>/groups/<%= group.id %>/entities" class="category-link">
+          <div class="category-container">
+            <div class="icon-container">
+              <%= image_tag "#{group.icon}.png", style: 'height:40px; width:40;' %>
+            </div>
+            <div class="category-details">
+              <div class="category-name">
+                <%= group.name %>
+              </div>
+           </a>
+           </div>
+              <div class="total-spent">
+                $<%= group.total_spent(group.id) %>
+              </div>
+          </div>
+       
+      <% end %>
+    <% end %>
+  </div>
+</main>
+
+
+<div class='btn-add-cat'>
+  <div class= 'btn-add-cat-container'>
+    <%= link_to 'ADD A NEW CATEGORY', new_user_group_path(current_user), class:  'link-btn' %>
+  <div>
+<div>
